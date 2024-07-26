@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block title %} Parakh Logic {% endblock %} {%
+block content %}
+
+<div class="btn-container">
+  <button class="start-btn" onclick="next()">
+    Start Test <br />
+    <span class="material-symbols-outlined"> flag_circle </span>
+  </button>
+</div>
+
+<script>
+  const next = () => (window.location.href = "/next");
+</script>
+{% endblock %}

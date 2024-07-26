@@ -1,0 +1,200 @@
+[
+  {
+    "level": "Easy",
+    "question": "If a function is even, what property does it satisfy?",
+    "options": {
+      "A": "f(-x) = -f(x)",
+      "B": "f(-x) = f(x)",
+      "C": "f(x) = -f(x)",
+      "D": "f(x) = f(-x)"
+    },
+    "answer": "B"
+  },
+  {
+    "level": "Easy",
+    "question": "What is the square root of 144?",
+    "options": {
+      "A": "10",
+      "B": "12",
+      "C": "14",
+      "D": "16"
+    },
+    "answer": "B"
+  },
+  {
+    "level": "Easy",
+    "question": "What is the value of log(1)?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "-1",
+      "D": "Undefined"
+    },
+    "answer": "A"
+  },
+  {
+    "level": "Easy",
+    "question": "Which of the following is the identity element for addition?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "-1",
+      "D": "None of the above"
+    },
+    "answer": "A"
+  },
+  {
+    "level": "Easy",
+    "question": "What is the sum of angles in a triangle?",
+    "options": {
+      "A": "90 degrees",
+      "B": "180 degrees",
+      "C": "270 degrees",
+      "D": "360 degrees"
+    },
+    "answer": "B"
+  },
+  {
+    "level": "Easy",
+    "question": "If a function is odd, what does it satisfy",
+    "options": {
+      "A": "f(-x) = -f(x)",
+      "B": "f(-x) = f(x)",
+      "C": "f(x) = -f(x)",
+      "D": "None of the above"
+    },
+    "answer": "A"
+  },
+  {
+    "level": "Easy",
+    "question": "Which of the following is a rational number?",
+    "options": {
+      "A": "5√2",
+      "B": "√2",
+      "C": "-3",
+      "D": "None of the above"
+    },
+    "answer": "C"
+  },
+  {
+    "level": "Easy",
+    "question": "What is the value of cos(0)?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "-1",
+      "D": "Undefined"
+    },
+    "answer": "B"
+  },
+  {
+    "level": "Easy",
+    "question": "What is the value of tan(1/4)?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "-1",
+      "D": "Undefined"
+    },
+    "answer": "A"
+  },
+  {
+    "level": "Hard",
+    "question": "What is the rank of the following 2x3 matrix?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "1",
+      "D": "0"
+    },
+    "answer": "A"
+  },
+  {
+    "level": "Hard",
+    "question": "Which of the following is an example of a scalar in linear algebra?",
+    "options": {
+      "A": "A vector",
+      "B": "A matrix",
+      "C": "A real number",
+      "D": "A complex number"
+    },
+    "answer": "C"
+  },
+  {
+    "level": "Hard",
+    "question": "What is the determinant of a 3x3 matrix with the following entries?",
+    "options": {
+      "A": "2 0 1, 3 1 -2, 4 3 5",
+      "B": "-26",
+      "C": "26",
+      "D": "34"
+    },
+    "answer": "D"
+  },
+  {
+    "level": "Hard",
+    "question": "What is the derivative of sin(x) with respect to x?",
+    "options": {
+      "A": "cos(x)",
+      "B": "-sin(x)",
+      "C": "sec(x)",
+      "D": "csc(x)"
+    },
+    "answer": "A"
+  },
+  {
+    "level": "Hard",
+    "question": "What is the eigenvalue of the matrix [3]?",
+    "options": {
+      "A": "[1]",
+      "B": "1",
+      "C": "3",
+      "D": "[3]"
+    },
+    "answer": "A"
+  },
+  {
+    "level": "Hard",
+    "question": "What is the result of the following operation: 3! + 4!?",
+    "options": {
+      "A": "17",
+      "B": "20",
+      "C": "24",
+      "D": "28"
+    },
+    "answer": "C"
+  },
+  {
+    "level": "Hard",
+    "question": "What is the Laplace transform of sin(at)?",
+    "options": {
+      "A": "a/(s^2 + a^2)",
+      "B": "s/(s^2 + a^2)",
+      "C": "a/s^2 + a^2",
+      "D": "s/a^2 + s^2"
+    },
+    "answer": "B"
+  },
+  {
+    "level": "Hard",
+    "question": "Which of the following is the derivative of ln(x)?",
+    "options": {
+      "A": "1/x",
+      "B": "x",
+      "C": "-1/x",
+      "D": "None of the above"
+    },
+    "answer": "A"
+  },
+  {
+    "level": "Hard",
+    "question": "What is the integral of e^x dx?",
+    "options": {
+      "A": "e^(x+1) + C",
+      "B": "e^(x-1) + C",
+      "C": "e^x + C",
+      "D": "e^(2x) + C"
+    },
+    "answer": "C"
+  }
+]

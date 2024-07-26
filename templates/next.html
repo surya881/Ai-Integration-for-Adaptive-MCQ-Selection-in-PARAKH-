@@ -1,0 +1,70 @@
+{% extends "base.html" %} {% block title %} Q{{ no }} {% endblock %} {% block
+content %}
+
+<p>
+  Question no. {{ no }}
+  <br />
+  Difficulty: {{ diff }}
+</p>
+
+<h1>{{ question.question }}</h1>
+
+{% for opt in question.options %}
+<button class="options" onclick="check(this, '{{ opt }}')">
+  {{ opt }}. {{ question.options[opt] }}
+</button>
+{% endfor %}
+
+<a href="/"> End test? </a>
+<div style="display: none" id="dialogText"></div>
+<script>
+  const text = document.getElementById("dialogText");
+  const ans = "{{ question.answer }}";
+  const no = {{ no }};
+  const diff = "{{ diff }}";
+  let won = false;
+
+  if (no == 1) {
+    localStorage.setItem("correct", "0");
+    localStorage.setItem("count", "0");
+  }
+
+  const increment = (key) => localStorage.setItem(key,
+    1 + Number(localStorage.getItem(key)));
+
+  function check(srcElement, sel) {
+    if (won) return;
+
+    text.innerHTML = "";
+    let correct = false;
+
+    if (sel.toUpperCase() == ans.toUpperCase()) correct = true;
+
+    const p = document.createElement("p");
+    p.innerHTML = correct ? "Correct 🥳" : "Not correct 😥";
+    text.appendChild(p);
+
+    won = true;
+
+    if (correct) {
+      srcElement.style.borderColor = "#047dffcb";
+      increment("correct");
+   } else srcElement.style.borderColor = "#bbb";
+
+    const a = document.createElement("a");
+
+    increment("count");
+    const count = Number(localStorage.getItem("count"));
+    if (count >= 10) {
+      a.href = `/result?cnt=${count}&cr=${localStorage.getItem('correct')}`;
+      a.innerText = "go to results? ";
+    } else {
+      a.href = `/next?diff=${correct ? "hard" : "easy"}&no=${no}`;
+      a.innerText = "go to next question>";
+    }
+
+    text.appendChild(a);
+    text.style.display = "block";
+  }
+</script>
+{% endblock %}

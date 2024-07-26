@@ -1,0 +1,108 @@
+@import "./mixins.scss";
+
+body {
+  @include fullscreen;
+  @include flex(column);
+  @include flex-center;
+  @include sans;
+
+  @include gradient;
+  padding: 0;
+  margin: 0;
+  color: $light;
+}
+
+.canvas-wrapper {
+  @include section(400px, 600px);
+}
+
+.container {
+  @include shadow;
+  @include flex(column);
+  @include section(80vh, 80vw);
+
+  gap: 10px;
+  background: $sec;
+  max-height: 500px;
+  max-width: 600px;
+
+  border: 1px solid $sec;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.options {
+  @include sans;
+  @include section(10%, 80%);
+  @include shadow;
+
+  border-radius: 10px;
+  text-align: left;
+  background-color: $tri;
+  outline: none;
+  border: 1px solid $tri;
+  color: $light;
+}
+
+button {
+  @include sans;
+
+  outline: none;
+  border: 0;
+  background: $sec;
+  color: $light;
+  cursor: pointer;
+
+  text-align: center;
+}
+.btn-container {
+  @include flex(column);
+  @include flex-center;
+}
+.start-btn {
+  @include section(100px, 200px);
+  height: 10vh;
+  border: 3px solid $light;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: $hl;
+}
+
+img {
+  @include section(50px, 50px);
+  border-radius: 50%;
+}
+
+nav {
+  @include fixed(0, 0);
+  @include section(10vh, 100vw);
+  @include flex(column);
+
+  align-items: center;
+  justify-content: flex-end;
+
+  color: $pri;
+
+  .nav-container {
+    @include blur;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 20px;
+
+    border-radius: 10px;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    background: $sec;
+    color: $light;
+    border-radius: 5px;
+  }
+}
